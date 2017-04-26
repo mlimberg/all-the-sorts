@@ -12,8 +12,13 @@ describe('bubbleSort', () => {
     expect(bubbleSort([1,2,3])).to.have.length(3)
   })
 
-  it('should sort the array lowest to highest', () => {
+  it('should have the lowest value last', () => {
     const answer = bubbleSort([5,2,4,3,1])
     expect(answer[answer.length - 1]).to.equal(5)
+  })
+
+  it('should order the entire array lowest to heights', () => {
+    const answer = bubbleSort([5, 2, 4, 3, 1])
+    expect(answer).to.deep.equal([1,2,3,4,5])
   })
 })
