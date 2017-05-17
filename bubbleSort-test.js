@@ -21,4 +21,9 @@ describe('bubbleSort', () => {
     const answer = bubbleSort([5, 2, 4, 3, 1])
     expect(answer).to.deep.equal([1,2,3,4,5])
   })
+
+  it('should order the entire array alphabetically', () => {
+    const answer = bubbleSort(['e', 'c', 'd', 'b', 'a'])
+    expect(answer).to.deep.equal(['a', 'b', 'c', 'd', 'e'])
+  })
 })
