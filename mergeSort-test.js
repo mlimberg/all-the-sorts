@@ -25,5 +25,6 @@ describe('mergeSort', () => {
   it('should order the entire array alphabetically', () => {
     const answer = mergeSort(['e', 'c', 'd', 'b', 'a'])
     expect(answer).to.deep.equal(['a', 'b', 'c', 'd', 'e'])
+
   })
 })

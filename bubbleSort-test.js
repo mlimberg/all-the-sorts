@@ -3,7 +3,7 @@ const expect = chai.expect
 const assert = chai.assert
 const bubbleSort = require('./bubbleSort')
 
-describe('bubbleSort', () => {
+describe('Bubble sort', () => {
   it('should exist', () => {
     expect(bubbleSort).to.exist
   })
@@ -17,7 +17,7 @@ describe('bubbleSort', () => {
     expect(answer[answer.length - 1]).to.equal(5)
   })
 
-  it('should order the entire array lowest to heights', () => {
+  it('should order the entire array lowest to heighest', () => {
     const answer = bubbleSort([5, 2, 4, 3, 1])
     expect(answer).to.deep.equal([1,2,3,4,5])
   })

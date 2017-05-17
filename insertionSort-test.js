@@ -4,6 +4,7 @@ const assert = chai.assert
 const insertionSort = require('./insertionSort')
 
 describe('insertionSort', () => {
+
   it('should exist', () => {
     expect(insertionSort).to.exist
   })
@@ -26,4 +27,5 @@ describe('insertionSort', () => {
     const answer = insertionSort(['e', 'c', 'd', 'b', 'a'])
     expect(answer).to.deep.equal(['a', 'b', 'c', 'd', 'e'])
   })
+
 })

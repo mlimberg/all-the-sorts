@@ -4,10 +4,12 @@ const mergeSort = (arr) => {
   const middle = parseInt(arr.length / 2);
   const left   = arr.slice(0, middle);
   const right  = arr.slice(middle, arr.length);
+
   return merge(mergeSort(left), mergeSort(right));
 }
 
 const merge = (left, right) => {
+
   let result = [];
 
   while (left.length && right.length) {
